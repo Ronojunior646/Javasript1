@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let colors = ["red", "green", "blue"];
+      console.log(colors);
+
+      let fruits = ["apple", "banana", "orange"];
+      fruits[1] = "pear";
+      console.log(fruits);
+
+      let numbers = [1, 2, 3, 4, 5];
+      let lengthOfNumbers = numbers.length;
+      console.log(lengthOfNumbers);
+
+      let languages = ["C", "C++", "Java", "Python"];
+      languages.pop();
+      console.log(languages);
+
+      let arr1 = [1, 2, 3];
+      let arr2 = [4, 5, 6];
+      let combinedArray = arr1.concat(arr2);
+      combinedArray.shift();
+      console.log(combinedArray);
+
+      let sourceArray = ["a", "b", "c", "d", "e", "f", "g"];
+      let extractedArray = sourceArray.slice(2, 4);
+      extractedArray.splice(0, extractedArray.length, "x", "y", "z");
+      console.log("sourceArray:", sourceArray);
+      console.log("modified extractedArray:", extractedArray);
+    </script>
+  </body>
+</html>
