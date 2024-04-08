@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let myArray=["rono","john",["ronaldo","messi",[100,200]],"kim","leon","rommel","rama"]
+        console.log(myArray)
+        console.log(myArray[1][2])
+        console.log(myArray[2][2])
+        console.log(myArray[2][2][0])
+
+       
+        myArray.push("ghost")
+        console.log(myArray)
+
+        myArray.pop()
+        console.log(myArray)
+
+        myArray.shift()
+        console.log(myArray)
+
+        myArray.unshift("ronaldo")
+        console.log(myArray)
+
+        myArray.splice(2,1)
+        console.log(myArray)
+
+        let slice_arr=myArray.slice(2,4)
+        console.log(slice_arr)
+
+        let join_arr=myArray.join("-")
+        console.log(join_arr)
+
+        let reverse_arr=myArray.reverse()
+        console.log(reverse_arr)
+
+        let sort_arr=myArray.sort()
+        console.log(sort_arr)
+
+        let a=[1,2,3,4,5]
+        let b=[6,7,8,9,0]
+        b.splice(4,0,"kevin","brian")
+        console.log(b)
+
+        let c=a.concat(b)
+        console.log(c)
+
+
+    </script>
+</body>
